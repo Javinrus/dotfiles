@@ -1,7 +1,7 @@
 #!/bin/bash
 
 THEME_DIR="$HOME/.config/themes"
-KITTY_ACTIVE="$HOME/.config/kitty/themes/current-theme.conf"
+KITTY_ACTIVE="$HOME/.config/kitty/current-theme.conf"
 
 themes=$(find "$THEME_DIR" -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
 
