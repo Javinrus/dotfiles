@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# OUTDATED, will be replaced soon
+
 THEME_DIR="$HOME/.config/themes"
 KITTY_ACTIVE="$HOME/.config/kitty/current-theme.conf"
 
