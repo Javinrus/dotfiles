@@ -1,2 +1,2 @@
-# Dotfiles
-My own dotfiles, available for Arch Linux and Void Linux in particular.
+# What?
+I think I'll edit this readme later
