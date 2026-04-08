@@ -13,7 +13,7 @@ fi
 
 # Select wallpaper with previews
 chosen=$(
-    find
+    find "$WALL_DIR" -type f \
 )
 
 # ===UNDER CONSTRUCTION===
