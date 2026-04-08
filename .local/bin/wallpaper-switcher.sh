@@ -11,9 +11,36 @@ if [[ ! -d "$WALL_DIR" ]]; then
     exit 1
 fi
 
-===UNDER CONSTRUCTION===
+# Select wallpaper with previews
+chosen=$(
+    find
+)
+
+# ===UNDER CONSTRUCTION===
+# Below are references I'm using
 
 
+chosen=$(
+    find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) \
+    -exec basename {} \; | sort | while read -r img; do
+        printf "%s\x00icon\x1f%s\n" "$img" "$WALL_DIR/$img"
+    done | rofi -dmenu -show-icons -p "🎨 Wallpaper"
+)
+
+[ -z "$chosen" ] && exit
+
+# Get full path (your grep approach works but this is safer)
+full_path="$WALL_DIR/$chosen"
+
+# Apply wallpaper
+pkill -x swaybg
+swaybg -i "$full_path" -m fill &
+
+# Save for persistence
+echo "$full_path" > "$STATE_FILE"
+
+# Optional notification (if you want it)
+command -v notify-send >/dev/null && notify-send "Wallpaper" "Set to $chosen" -t 1500
 
 
 
