@@ -41,4 +41,4 @@ swaybg -i "$wallpaper" -m fill &
 echo "$wallpaper" > "$STATE_FILE"
 
 # Notify changes
-notify-send "Success" "Selected to $chosen"
+notify-send "Wallpaper Switched" "File selected: $chosen"
