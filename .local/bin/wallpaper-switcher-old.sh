@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# This is an old implementation of the script
+# It runs "find" twice and is also less efficient
+# It also does not use an index
+# See the newer one, wallpaper-select.sh
+
 # Wallpaper directory (shared between Artix and Void)
 WALL_DIR="/data/images/wallpapers"
 STATE_FILE="$HOME/.current_wallpaper"
