@@ -15,6 +15,12 @@ mapfile -t wallpapers < <(
     find "$WALL_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | sort
 )
 
+# Check if wallpapers exist
+[[ ${#wallpapers[@]} -eq 0 ]] && {
+    notify-send "Error" "No wallpapers found in $WALL_DIR"
+    exit 1
+}
+
 # Show wallpaper list in Rofi with previews
 chosen_index=$(
     for i in "${!wallpapers[@]}"; do
@@ -34,7 +40,7 @@ pkill swaybg 2>/dev/null
 swaybg -i "$wallpaper" -m fill &
 
 # Persist selected wallpaper path
-echo "$wallpaper" > "$STATE_FILE"
+printf '%s\n' "$wallpaper" > "$STATE_FILE"
 
 # Notify changes
 notify-send "Wallpaper Changed" "File selected: $(basename "$wallpaper")"
