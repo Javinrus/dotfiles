@@ -17,8 +17,8 @@ local function srun(name)
 end
 
 -- Launch terminal
-hl.bind("SUPER + Q",          run(terminal))
-hl.bind("SUPER + SHIFT + Q",  run(terminal, {float = true}))
+hl.bind("SUPER + Q",         run(terminal))
+hl.bind("SUPER + SHIFT + Q", run(terminal, {float = true}))
 
 -- Launch some menus
 hl.bind("SUPER + E",      run("rofimoji"))
