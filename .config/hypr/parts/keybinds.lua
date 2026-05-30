@@ -28,3 +28,4 @@ hl.bind("SUPER + Z",      srun("wallpaper-select.sh"))
 hl.bind("SUPER + ESCAPE", run("wlogout"))
 
 -- Launch some apps
+hl.bind("SUPER + F", run(file))
