@@ -20,7 +20,7 @@ end
 hl.bind("SUPER + Q",          run(terminal))
 hl.bind("SUPER + SHIFT + Q",  run(terminal, {float = true}))
 
--- Launch some menu
+-- Launch some menus
 hl.bind("SUPER + E",      run("rofimoji"))
 hl.bind("SUPER + R",      run(menu .. " -show drun"))
 hl.bind("SUPER + W",      run(menu .. " -show window"))
