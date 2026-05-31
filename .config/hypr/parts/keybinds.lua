@@ -56,7 +56,7 @@ end
 
 -- Workspaces action
 for i = 1, 10 do
-    local key = i % 10 -- 10 maps to key 0
+    local key = i % 10 -- map 10 → 0 key
     hl.bind("SUPER + " .. key,         hl.dsp.focus({ workspace = i}))        -- Switch workspaces
     hl.bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i })) -- Move active window to workspace
 end
