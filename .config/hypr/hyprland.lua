@@ -1,5 +1,11 @@
--- Split the config to organize better
-require("parts.monitors")
-require("parts.autostart")
-require("parts.environment")
-require("parts.keybinds")
+-- This config is a multifile, splitting helps to organize better
+local parts = {
+    "parts.environment",
+    "parts.monitors",
+    "parts.autostart",
+    "parts.keybinds",
+}
+
+for _, i in ipairs(parts) do
+    require(i)
+end
