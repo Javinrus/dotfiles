@@ -1,4 +1,4 @@
--- This was made as of version 0.55.2
+-- This was modified as of version 0.55.2
 -- This config is a multifile, splitting helps to organize better
 local parts = {
     "parts.monitors",
