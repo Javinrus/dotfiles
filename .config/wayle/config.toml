@@ -8,10 +8,9 @@ show = true
 left = [
     "dashboard",
     "hyprland-workspaces",
-    "cava", # Audio visualizer
+    "window-title",
 ]
 center = [
-    "window-title",
     "clock",
     "notifications",
 ]
