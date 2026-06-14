@@ -21,10 +21,6 @@ right = [
     "battery",
 ]
 
-
-
-
-
 [modules.dashboard]
 dropdown-reboot-command = "loginctl reboot"
 dropdown-poweroff-command = "loginctl poweroff"
