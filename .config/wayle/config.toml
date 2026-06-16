@@ -1,6 +1,16 @@
 # This was modified as of version 0.5.0
+[general]
+font-sans = "Inter"
+font-mono = "CaskaydiaMono Nerd Font"
+tearing-mode = false
+
 [bar]
-scale = 1.0
+location = "top"
+exclusive = true
+layer = "top"
+shadow = "none"
+button-variant = "block-prefix"
+dropdown-shadow = false
 
 [[bar.layout]]
 monitor = "*"
@@ -21,7 +31,20 @@ right = [
     "battery",
 ]
 
+[styling]
+theme-provider = "wayle"
+
+[modules.clock]
+format = "%Y-%m-%d %H:%M:%S"
+right-click = ""
+dropdown-show-seconds = true
+
+# If you're on non-systemd distros, replace systemctl with loginctl
 [modules.dashboard]
+icon-color = "auto"
+icon-bg-color = "yellow"
+dropdown-lock-command = "loginctl lock-session"
+dropdown-logout-command = "loginctl terminate-session $XDG_SESSION_ID"
 dropdown-reboot-command = "loginctl reboot"
 dropdown-poweroff-command = "loginctl poweroff"
 
@@ -33,9 +56,16 @@ border-color = "green"
 icon-bg-color = "green"
 label-color = "green"
 
+[modules.weather]
+time-format = "24h"
+
 [modules.window-title]
 label-max-length = 20
 
+[osd]
+enabled = true
+duration = 1000
+border = false
+
 [wallpaper]
 engine-enabled = false
-
