@@ -2,14 +2,30 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<name>Terminal</name>
 	<submenu></submenu>
 	<unique-id>1778080439437750-1</unique-id>
 	<command>foot --working-directory %f</command>
-	<description>Open a terminal in the provided directory</description>
+	<description>Open terminal with the provided directory</description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
+</action>
+<action>
+	<icon>link</icon>
+	<name>Create Symlink...</name>
+	<submenu></submenu>
+	<unique-id>1758831930937907-1</unique-id>
+    <command>ln -s -- "%f" "Link to %n"</command>
+	<description>Create a new symbolic link to the selected file</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
 </action>
 </actions>
