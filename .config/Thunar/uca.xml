@@ -6,7 +6,7 @@
 	<submenu></submenu>
 	<unique-id>1778080439437750-1</unique-id>
 	<command>foot --working-directory %f</command>
-	<description>Open terminal with the provided directory</description>
+	<description>Open terminal within the provided directory</description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
