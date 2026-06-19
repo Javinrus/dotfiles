@@ -12,20 +12,4 @@
 	<startup-notify/>
 	<directories/>
 </action>
-<action>
-	<icon>link</icon>
-	<name>Create Symlink...</name>
-	<submenu></submenu>
-	<unique-id>1758831930937907-1</unique-id>
-    <command>ln -s -- "%f" "Link to %n"</command>
-	<description>Create a new symbolic link to the selected file</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
 </actions>
