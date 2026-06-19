@@ -36,7 +36,7 @@ right = [
 theme-provider = "wayle"
 
 [modules.clock]
-format = "%Y-%m-%d %H:%M:%S"
+format = "%d-%m-%Y %H:%M:%S"
 right-click = ""
 dropdown-show-seconds = true
 
