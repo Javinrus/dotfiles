@@ -42,6 +42,7 @@ dropdown-show-seconds = true
 
 # If you're on non-systemd distros, replace systemctl with loginctl
 [modules.dashboard]
+border-color = "yellow"
 icon-color = "auto"
 icon-bg-color = "yellow"
 dropdown-lock-command = "loginctl lock-session"
