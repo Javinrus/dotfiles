@@ -1,60 +1,43 @@
 ; This was modified as of version 4.20
 
+; Edit the keybinds here, Thunar automatically rearranges accels.scm into a generated mess
+
 ; General
 (gtk_accel_path "<Actions>/ThunarWindow/new-window" "") ; I just use SUPER + F
 (gtk_accel_path "<Actions>/ThunarWindow/close-window" "") ; I just use SUPER + C
 (gtk_accel_path "<Actions>/ThunarShortcutsPane/sendto-shortcuts" "")
 
-(gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-tree" "")
-
 ; Navigation
+(gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-tree" "")
 (gtk_accel_path "<Actions>/ThunarWindow/view-menubar" "")
-(gtk_accel_path "<Actions>/Thunarwindow/menu" "<Primary>m")
-(gtk_accel_path "<Actions>/ThunarWindow/open-parent" "backpace")
+(gtk_accel_path "<Actions>/ThunarWindow/menu" "<Primary>m")
+(gtk_accel_path "<Actions>/ThunarWindow/open-parent" "BackSpace")
 
 ; Actions
-(gtk_accel_path "<Actions>/ThunarActionManager/open-with-other" "<Shift>Return")
-(gtk_accel_path "<Actions>/ThunarStandardView/set-default-app" "<Alt>Return")
+(gtk_accel_path "<Actions>/ThunarActionManager/open-with-other" "<Primary>Return")
+(gtk_accel_path "<Actions>/ThunarStandardView/properties" "<Alt>Return")
+(gtk_accel_path "<Actions>/ThunarStandardView/set-default-app" "<Shift>Return")
 (gtk_accel_path "<Actions>/ThunarStandardView/duplicate" "<Primary>d")
-(gtk_accel_path "<Actions>/ThunarStandardView/make-link" "<Primary>n")
-
-; (gtk_accel_path "<Actions>/ThunarWindow/empty-trash" "")
-; (gtk_accel_path "<Actions>/ThunarStandardView/rename" "F2")
-; (gtk_accel_path "<Actions>/ThunarActionManager/redo" "<Primary><Shift>z")
-; (gtk_accel_path "<Actions>/ThunarWindow/reload" "<Primary>r")
-; (gtk_accel_path "<Actions>/ThunarActionManager/open" "<Primary>o")
-; (gtk_accel_path "<Actions>/ThunarActionManager/restore" "")
-; (gtk_accel_path "<Actions>/ThunarActionManager/restore-show" "")
-; (gtk_accel_path "<Actions>/ThunarWindow/open-trash" "")
-; (gtk_accel_path "<Actions>/ThunarStatusBar/toggle-size-in-bytes" "")
-; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
-; (gtk_accel_path "<Actions>/ThunarStandardView/select-all-files" "<Primary>a")
-; (gtk_accel_path "<Actions>/ThunarActionManager/execute" "")
-; (gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-shortcuts" "<Primary>b")
-; (gtk_accel_path "<Actions>/ThunarActionManager/undo" "<Primary>z")
-; (gtk_accel_path "<Actions>/ThunarActionManager/open-in-new-tab" "<Primary><Shift>p")
-; (gtk_accel_path "<Actions>/ThunarWindow/show-hidden" "<Primary>h")
+(gtk_accel_path "<Actions>/ThunarStandardView/make-link" "<Primary>n") ; Make symlink
+(gtk_accel_path "<Actions>/ThunarStandardView/rename" "<Shift>r")
+(gtk_accel_path "<Actions>/ThunarWindow/empty-trash" "<Primary><Shift>Delete")
+(gtk_accel_path "<Actions>/ThunarActionManager/redo" "<Primary>y")
+(gtk_accel_path "<Actions>/ThunarActionManager/open" "")
+(gtk_accel_path "<Actions>/ThunarActionManager/restore" "<Alt>r")
 
 ; Sorting
-(gtk_accel_path "<Actions>/ThunarStandardView/toggle-sort-order" "<Alt>o")
-(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-name" "<Alt>n")
-(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-size" "<Alt>s")
-(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "<Alt>t")
+(gtk_accel_path "<Actions>/ThunarStandardView/toggle-sort-order" "<Shift>o")
+(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-name" "<Shift>n")
+(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-size" "<Shift>s")
+(gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "<Shift>t")
 
 ; Custom, see uca.xml and the UIDs
-(gtk_accel_path "<Actions>/ThunarActions/uca-action-1778080439437750-1" "<Alt>q")
+(gtk_accel_path "<Actions>/ThunarActions/uca-action-1778080439437750-1" "<Primary>q")
 
-; (gtk_accel_path "<Actions>/ThunarStandardView/properties" "<Alt>Return")
+(gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-shortcuts" "")
+(gtk_accel_path "<Actions>/ThunarActionManager/open-in-new-tab" "<Shift>f")
 
-; (gtk_accel_path "<Actions>/ThunarWindow/open-templates" "")
-; (gtk_accel_path "<Actions>/ThunarWindow/close-all-windows" "<Primary><Shift>C")
+(gtk_accel_path "<Actions>/ThunarWindow/close-all-windows" "<Primary><Shift>c")
 
-
-; (gtk_accel_path "<Actions>/ThunarWindow/cancel-search" "Escape")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
-; (gtk_accel_path "<Actions>/ThunarWindow/toggle-side-pane" "F9")
-
-; (gtk_accel_path "<Actions>/ThunarStandardView/back" "<Alt>Left")
-
-; (gtk_accel_path "<Actions>/ThunarActionManager/copy" "<Primary>c")
-; (gtk_accel_path "<Actions>/ThunarActionManager/delete-2" "  <Shift>Delete")
+(gtk_accel_path "<Actions>/ThunarWindow/toggle-side-pane" "<Primary>p")
