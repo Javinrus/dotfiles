@@ -3,3 +3,10 @@
 - [ ] Create a lock files (using pkexec chattr -i or +i) script with walker, I see some use cases for this
 - [ ] Replace the Terminal entry in `uca.xml` with a walker script that opens specific app with the provided directory
 - [ ] Add those (above) to `uca.xml` and `accels.scm`
+- [ ] Modify fish greeting and prompt function
+- [ ] Improve the README.md
+- [ ] Move non-dotfiles files to `.github/`
+- [ ] Add more previews screenshots
+- [ ] Modify wallpaper script to use awww instead of swaybg and walker instead of rofi
+- [ ] Add a theme color switcher script with walker
+- [ ] Add a customization script that shows wallpaper and theme as options that when picked show another walker menu of the respective option
