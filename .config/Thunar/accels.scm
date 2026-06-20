@@ -39,5 +39,6 @@
 
 (gtk_accel_path "<Actions>/ThunarWindow/close-all-windows" "<Primary><Shift>c")
 
-; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
+(gtk_accel_path "<Actions>/ThunarStandardView/create-document" "<Primary>i")
+(gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Shift>i")
 (gtk_accel_path "<Actions>/ThunarWindow/toggle-side-pane" "<Primary>p")
