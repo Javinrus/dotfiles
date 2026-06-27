@@ -5,9 +5,8 @@ local autostart = {
   "mako", -- Notification daemon
   "wl-clip-persist --clipboard regular", -- Enable clipboard persistence
   "/usr/lib/xfce-polkit/xfce-polkit", -- Policy manager
-  "elephant", -- Data provider service, if you're on non-systemd distros you must manually start it
-  "walker --gapplication-service", -- MultiPurpose launcher
-  ""
+  "elephant", -- Data provider service and backend
+  "walker --gapplication-service", -- MultiPurpose launcher, run it as a service for faster startup speed
   "bash -c '[[ -f \"$HOME/.current_wallpaper\" ]] && swaybg -i \"$(cat $HOME/.current_wallpaper)\" -m fill'" -- Restore wallpaper
 }
 
