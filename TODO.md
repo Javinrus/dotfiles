@@ -5,7 +5,6 @@
 - [ ] Add those (above) to `uca.xml` and `accels.scm`
 - [ ] Modify fish greeting and prompt function
 - [ ] Improve the README.md
-- [ ] Move non-dotfiles files to `.github/`
 - [ ] Add more previews screenshots
 - [ ] Modify wallpaper script to use awww instead of swaybg and walker instead of rofi
 - [ ] Add a theme color switcher script with walker
