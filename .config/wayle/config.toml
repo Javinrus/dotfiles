@@ -21,7 +21,7 @@ left = [
     "window-title",
 ]
 center = [
-    "hyprsunset",
+    "brightness",
     "clock",
     "notifications",
 ]
