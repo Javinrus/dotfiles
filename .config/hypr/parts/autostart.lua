@@ -11,7 +11,7 @@ local autostart = {
   "bash -c '[[ -f \"$HOME/.current_wallpaper\" ]] && swaybg -i \"$(cat $HOME/.current_wallpaper)\" -m fill'" -- Restore wallpaper
 }
 
--- Then run all the listed programs
+-- Then autostart the listed programs
 hl.on("hyprland.start", function()
     for i = 1, #autostart do
         hl.exec_cmd(autostart[i])
