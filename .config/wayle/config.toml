@@ -19,12 +19,12 @@ left = [
     "dashboard",
     "hyprland-workspaces",
     "window-title",
+    "brightness",
 ]
 center = [
-    "brightness",
+    "hyprsunset",
     "clock",
     "notifications",
-    "hyprsunset",
 ]
 right = [
     "network",
@@ -58,9 +58,6 @@ popup-position = "top-center"
 border-color = "green"
 icon-bg-color = "green"
 label-color = "green"
-
-[modules.weather]
-time-format = "24h"
 
 [modules.window-title]
 label-max-length = 20
