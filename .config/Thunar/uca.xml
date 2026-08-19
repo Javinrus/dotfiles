@@ -2,12 +2,10 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Terminal</name>
-	<submenu></submenu>
+	<name>Open Terminal</name>
 	<unique-id>1778080439437750-1</unique-id>
-	<command>foot --working-directory %f</command>
+	<command>sh -c 'for dir do foot --working-directory "$dir" &amp; done' sh %F</command>
 	<description>Open terminal within the provided directory</description>
-	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
