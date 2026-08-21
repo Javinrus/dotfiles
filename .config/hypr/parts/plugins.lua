@@ -1,28 +1,29 @@
--- 
+-- https://wiki.hypr.land/Plugins/Using-Plugins
+hl.exec_cmd("hyprpm reload")
 
+-- Prevents a temporary error from plugins not loaded yet
+-- This happens because the config is evaluated before plugins are loaded
+if hl.plugin.scrolloverview ~= nil then
+    hl.config({
+        plugin = {
+            scrolloverview = {
+                gesture_distance = 300,
+                scale = 0.7,
+                workspace_gap = 30,
+                layout = "horizontal",
+                wallpaper = 0,
+                blur = false,
 
-
-
-
-
-hl.config({
-    plugin = {
-        scrolloverview = {
-            gesture_distance = 300, -- how far is the "max" for the gesture
-            scale = 0.7, -- preferred overview scale
-            workspace_gap = 30,
-            layout = "horizontal", -- vertical or horizontal
-            wallpaper = 0, -- 0: global only, 1: per-workspace only, 2: both
-            blur = false, -- blur only the main overview wallpaper
-
-            shadow = {
-                enabled = false,
+                shadow = {
+                    enabled = false,
+                },
             },
         },
-    },
-})
+    })
 
--- Toggle ScrollOverview with SUPER+g
-hl.bind("SUPER + g", function()
-    hl.plugin.scrolloverview.overview("toggle all")
-end)
+    -- I love Niri's overview
+    -- https://github.com/niri-wm/niri/wiki/Overview
+    hl.bind("SUPER + SHIFT + W", function()
+        hl.plugin.scrolloverview.overview("toggle all")
+    end)
+end
