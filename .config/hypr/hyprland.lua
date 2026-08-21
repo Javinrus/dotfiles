@@ -1,3 +1,4 @@
+-- https://wiki.hypr.land/Configuring/Start/
 require("parts.monitors")
 require("parts.env")
 require("parts.startup")
