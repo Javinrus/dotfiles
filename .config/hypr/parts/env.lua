@@ -5,7 +5,6 @@ hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
--- I'm making my own cursor theme soon
 -- Using Nordzy's for now
 hl.env("HYPRCURSOR_THEME", "Nordzy-hyprcursor")
 hl.env("HYPRCURSOR_SIZE", "32")
