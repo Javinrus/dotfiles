@@ -1,4 +1,4 @@
--- https://wiki.hypr.land/Plugins/Using-Plugins
+-- https://wiki.hypr.land/Plugins/Using-Plugins/
 hl.exec_cmd("hyprpm reload")
 
 -- Prevents a temporary error from plugins not loaded yet
