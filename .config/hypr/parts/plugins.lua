@@ -21,8 +21,6 @@ if hl.plugin.scrolloverview ~= nil then
         },
     })
 
-    -- I love Niri's overview
-    -- https://github.com/niri-wm/niri/wiki/Overview
     hl.bind("SUPER + SHIFT + W", function()
         hl.plugin.scrolloverview.overview("toggle all")
     end)
