@@ -20,23 +20,30 @@ hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
 
--- XDG specifications
-hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
-hl.env("XDG_SESSION_TYPE", "wayland")
-hl.env("XDG_SESSION_DESKTOP", "Hyprland")
-
--- Good sir, what is this?
+-- What is this?
 -- Basically helps apps to figure out where to store:
 local XDG_STATE_HOME  = HOME .. "/.local/state" -- Persistent state/history
 local XDG_DATA_HOME   = HOME .. "/.local/share" -- Persistent application data
 local XDG_CONFIG_HOME = HOME .. "/.config"      -- Configuration files
 local XDG_CACHE_HOME  = HOME .. "/.cache"       -- Disposable cache
 
--- Global XDG environment variables 
+-- Your $HOME will then have less weird directories and files
+-- https://wiki.archlinux.org/title/XDG_Base_Directory
+-- https://wiki.archlinux.org/title/XDG_user_directories
+
+-- XDG specifications
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+
 hl.env("XDG_STATE_HOME",  XDG_STATE_HOME)
 hl.env("XDG_DATA_HOME",   XDG_DATA_HOME)
 hl.env("XDG_CONFIG_HOME", XDG_CONFIG_HOME)
 hl.env("XDG_CACHE_HOME",  XDG_CACHE_HOME)
 
--- I found this very useful, thanks man!
+-- Force some apps to use XDG base directories
+hl.env("CARGO_HOME",    XDG_DATA_HOME   .. "/rust-cargo")
+hl.env("DOCKER_CONFIG", XDG_CONFIG_HOME .. "/docker")
+
+-- Thanks, user from the internet!
 -- https://github.com/cebem1nt/dotfiles/blob/main/.config/hypr/config/env.lua
