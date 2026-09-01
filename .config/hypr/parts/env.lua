@@ -41,9 +41,6 @@ hl.env("XDG_DATA_HOME",   XDG_DATA_HOME)
 hl.env("XDG_CONFIG_HOME", XDG_CONFIG_HOME)
 hl.env("XDG_CACHE_HOME",  XDG_CACHE_HOME)
 
---
-hl.env("XDG_TEMPLATES_DIR",   XDG_DATA_HOME .. "/templates") -- ~/Templates to ~/.local/share/templates
-
 -- Force some apps to use XDG base directories
 hl.env("HISTFILE",               XDG_STATE_HOME  .. "/bash_history")
 hl.env("PYTHON_HISTORY",         XDG_STATE_HOME  .. "/python_history")
