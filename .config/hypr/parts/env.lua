@@ -67,5 +67,5 @@ hl.env(
     )
 )
 
--- That part above is based from this:
+-- Based on:
 -- https://github.com/cebem1nt/dotfiles/blob/main/.config/hypr/config/env.lua
