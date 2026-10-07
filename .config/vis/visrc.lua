@@ -5,6 +5,7 @@ vis.events.subscribe(vis.events.INIT, function()
 end)
 
 -- Plugins
+local complete_filename = require("plugins.complete-filename")
 local autoclose = require("plugins.vis-autoclose")
 local colorizer = require("plugins.vis-colorizer")
 
