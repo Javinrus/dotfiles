@@ -6,6 +6,8 @@ end)
 
 -- Plugins
 local complete_filename = require("plugins.complete-filename")
+
+-- External plugins
 local autoclose = require("plugins.vis-autoclose")
 local colorizer = require("plugins.vis-colorizer")
 
