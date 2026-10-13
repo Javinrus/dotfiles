@@ -12,7 +12,10 @@ This file documents external material included in or used by this repository.
 ### dotfiles
 - License: MIT
 - Copyright: cebem1nt
-- Source:
+- Source: https://github.com/cebem1nt/dotfiles
+- Modified: Yes
+- Files:
+  - [animations.lua](https://github.com/Javinrus/dotfiles/blob/master/.config/hypr/modules/animations.lua)
 
 ### vis-autoclose
 
