@@ -1,4 +1,4 @@
---  https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
+-- https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("md3_decel",  { type = "bezier", points = { {0.05, 0.70}, {0.05, 1.00} } })
 hl.curve("md3_accel",  { type = "bezier", points = { {0.30, 0.00}, {0.80, 0.15} } })
 hl.curve("menu_decel", { type = "bezier", points = { {0.10, 1.00}, {0.00, 1.00} } })
