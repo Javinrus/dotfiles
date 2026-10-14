@@ -20,30 +20,30 @@ hl.window_rule({
 })
 
 -- hl.window_rule({
---     name = "Float by title",
+--     name  = "Float by title",
 --     match = { 
 --         title = ""
 --     },
 --
---     float = true,
+--     float  = true,
 --     center = true,
 --     persistent_size = true,
 -- })
 
 hl.window_rule({
-    name = "Float by class",
+    name  = "Float by class",
     match = { 
         class = "nwg-look|qt6ct"
     },
 
-    float = true,
+    float  = true,
     center = true,
     persistent_size = true,
 })
 
 -- Best file manager
 hl.window_rule({
-    name = "Thunar dialogs",
+    name  = "Thunar dialogs",
     match = {
         class = "thunar|Thunar",
         title = 'Rename "*.*"|File Operation Progress|Confirm to replace files|Attention'
@@ -54,7 +54,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "Thunar stay focused",
+    name  = "Thunar stay focused",
     match = {
         class = "thunar|Thunar",
         title = 'Attention|Rename "*.*"|Create Document from .*|New .* ...|Create New Folder'
@@ -64,7 +64,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "Thunar menu force center",
+    name  = "Thunar menu force center",
     match = {
         class = "(thunar|Thunar)",
         title = "^(Confirm to replace files)$",
