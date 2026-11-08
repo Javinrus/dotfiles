@@ -1,0 +1,10 @@
+-- https://wiki.hypr.land/configuring/core/
+require("modules.monitors")
+require("modules.env")
+require("modules.startup")
+require("modules.inputs")
+require("modules.gestures")
+require("modules.binds")
+require("modules.rules")
+require("modules.main")
+require("modules.animations")
