@@ -31,7 +31,7 @@ hl.window_rule({
 hl.window_rule({
     match = {
         class = "thunar|Thunar",
-        title = 'Rename "*.*"|File Operation Progress|Confirm to replace files|Attention'
+        title = 'Rename "*.*"|File Operation Progress|Confirm to replace files|Attention|Open File'
     },
 
     float = true,
